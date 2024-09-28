@@ -1,0 +1,434 @@
+{
+    "intents": [{
+            "tag": "greeting",
+            "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+            "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+            "context": [""]
+        },
+
+
+        {
+            "tag": "ሰላምታ",
+            "patterns": ["ሰላም", "ሃይ", "ጥሩ", "Awesome, thanks", "እርዳታ ፈልጌ ነው"],
+            "responses": ["ሰላም ! ይህ ስማርት ግብርና ነው! የግብርና መርጃውችንና ምክር ሃሳቦችን የሜያገኞበት ቦት ነው"],
+            "context": [""]
+        },
+
+        {
+            "tag": "ስንብት",
+            "patterns": ["ድህና ሆን", "ቻው", "አመሰናለሁ", "ጨርሻለሁ", "መልካም አዳር", "መልካም ሳምንት"],
+            "responses": ["የስማርት ግብርናን ስለተጠቀሞ እናመስኛለ፣ ደህና ሆን !", " መልካም ቀን ይሆንልወ፤ ስለግብርናችን አብርን እንስራ", "ለግብርናችን እድገት የበኮልውን ይወጡ፤ ሰላም የሆኑ"],
+            "context": [""]
+        },
+        {
+            "tag": "ባዶ",
+            "patterns": [" "],
+            "responses": ["እባክው እንደገን አስተካክለው ያአስገቡ፡ ለእርሰዉ መልስ ማግኘት አልተቻለም"],
+            "context": [""]
+        },
+
+
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+            "context": [""]
+        },
+
+
+
+
+
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"],
+            "context": [""]
+        },
+
+
+        {
+            "tag": "options",
+            "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+            "responses": ["I can guide you through Adverse in farm area , "],
+            "context": [""]
+        },
+
+        {
+            "tag": "አማራጭ",
+            "patterns": ["የእትዮጵያ ግብርና ሆኔታ", "ግብርና በእትዮጵያ", "የሃገራችን ግብርና ሂደት", "የሃገራችን እርሻ"],
+            "responses": ["ግብርና ከአጠቃላይ የኢትዮጵያ GDP ከ40% በላይ ፤ ከ60% በላይ ዮውጭ ምንዛሬና ከ80% በላይ ህዝብ ሜተዳደርበት ዘርፍ ነው። ይሁን እንጄ ሁላቀር አስራርን በመከተሎ አጥጋቤ ውጢት ማግኝት አዳጋች አድርጎታል።  "],
+            "context": [""]
+        },
+
+
+        {
+            "tag": "combiner",
+            "patterns": ["How does the combine harvester help farmers?",
+                "how combine harvestor use?",
+                "What help me to harvest?",
+                "How combiner can be helpful ?",
+                "What support is combiner offered"
+            ],
+            "responses": ["The combine harvester saves the farmers time and labor,Combine Harvester commonly known as 'combine' is a key invention that saves cost and time for farmers. Like the name suggests, this machine simply combines the three major harvesting operations – reaping, threshing, and winnowing into a single process. "],
+            "context": [""]
+        },
+
+
+
+        {
+            "tag": "ሜካናይዝድ እርሻ",
+            "patterns": ["ሜካናይዝድ እርሻ ምንድን ነው?",
+                "ኮምባይነር ለኢትዮጵያ እርሻ ያለው አግልግሎት?",
+                "ለዘመናዌ እርሻ ምን ምን መተቀም ያስፈልጋል?",
+                "የግብርና ማሽኖች እንዴት ማኝግት ያቻላል?",
+                "የግብርና ማሽኖች በኢትዮጵያ?"
+            ],
+            "responses": ["የሚካናይዝድ እርሻ አነስተኝ በሆነ ጎልበት ከፍተኛ ምርት ማግኝት ከማስቻሎም በላይ የግብርን ኢኮኖሜ ከ80% በላይ ያሳድጋል። ሜካናይዝድ ማሽኖች በመንግስት ፣በግለሰቦች፤ በባንኮችና በሌሉች ተባባሬ አካላት ለአርሶ አደሮና ለባለሃብቶ በመሰራጨት ላይ ናችው።"],
+            "context": [""]
+        },
+
+
+        {
+            "tag": "tractor",
+            "patterns": ["How many tractors are there in Ethiopia?",
+                "How many tractors are there in Ethiopia ?",
+                "how to make our farm smart?",
+                "what is percesion farming ?",
+                "what is smart farming?",
+                "how to grow our farm"
+            ],
+            "responses": ["Smart farming solutions work through sensors. Farmers can monitor various conditions like soil moisture, water level, light, humidity, obstacles, and motion from anywhere by combining sensors, motion detectors, button camera, and wearable devices"],
+            "context": [""]
+        },
+
+
+        {
+            "tag": "ግብርና",
+            "patterns": ["ግብርና ምንድን ነው", "የግብርና ትርጎም?"],
+            "responses": [" ግብርና ማለት በአንድ አካባቤ ያሎ መሪቶችን የተፈጥሮ ሃብቶችን በመጠቀም አሰፈላጌ ምርቶችን ማምረት ነው፡፡ "],
+            "context": [""]
+        },
+        {
+            "tag": "farming_export",
+            "patterns": ["What are the leading farm commodities in the Ethiopia?",
+                "most crops in ethopia ?",
+                "Top crops in Ethiopia ",
+                "Ethiopia major crop",
+                "What is crop production in Ethiopia?",
+                "Ethiopia highley crop"
+            ],
+            "responses": [" Five major cereals (teff, wheat, maize, sorghum, and barley) are the core of Ethiopia's agriculture and food economy, accounting for about three-fourths of the total area cultivated, 29 percent of agricultural gross domestic product (GDP) in 2005/06 (14 percent of total GDP), and 64 percent of calories consumed",
+                "average of 12 million ton of cereals, which is 68 percent of total agricultural production. The five major cereals are teff, wheat, maize, sorghum and barley. Teff accounts for 28 percent of total cereal area, while maize stands for 27 percent of total annual cereal production"
+            ],
+            "context": [""]
+        },
+
+        {
+            "tag": "smart",
+            "patterns": ["what is smart farming",
+                "what is this ?",
+                "how smart farming system work",
+                "how smart farming work",
+                "how farming work in ethioipia"
+            ],
+
+            "responses": ["It helps the farmers to get informed decision about the farming strategy. Here, I present you a dataset which would allow the users to build a predictive model to recommend the most suitable crops to grow in a particular farm based on various parameters"],
+            "context": [""]
+        },
+
+        {
+            "tag": "import",
+            "patterns": ["Who imports the most wheat?",
+                "which crop import to Ethiopia ?",
+                "What is wheat production in Ethiopia?",
+                "Does Ethiopia import whaeat?",
+                "What is crop production in Ethiopia?"
+            ],
+
+            "responses": ["Ethiopia imports Wheat primarily from: United States ($196M), Argentina ($53.1M), Ukraine ($39.6M),Russia ($13M), and Bulgaria ($8.39M). The fastest growing import markets in Wheat for Ethiopia between 2019 and 2020 were United States ($121M), Argentina ($53.1M), and India ($2.21M)."],
+            "context": [""]
+        },
+
+        {
+            "tag": "ስንዴ_ምርት_መገኛ",
+            "patterns": ["ለስንዴ ተስማሚው መሬት ኢትዮጵያ የት ይገኛል?",
+                "ስንዴን እንዴት ማብቀል ያቻላል ኢትዮጵያ ?",
+                "ለስንዴ ተስማሜው ቦታ",
+                "ስንዴ አብቃይ ክፍሎች ?",
+                "ስንዴ የት የት የበቅላል ?"
+            ],
+
+            "responses": ["ስንዴ በሽክላማ አፈር እና ከፍተኝ የዝናብ መጠን ይፈልጋል፡፡ ከ10 °C እስከ 23.2 °C የሙቀት መጠን እና 823.1 mm አመታዌ የዝናብ መጠን በሚያገኞ መሬት ላይ የስንዴ ምርት ሰብል ይበቅላል፡፡እንደ ማእከላዌ ስታስቴክስ መረጃ ከሆነ ሰንዴ በከፍተኛና በማከላዌ፣ ደቡብ ምስራቅ አና በሰሜን ምእራብ የኢትዮጵያ ክፍል በዋናነት ይበቅላል፡፡ በኢትዮጵያ ከአጥቃላይ የስንዴ ምርት 75.5% የሜሆነውን ምርት አርሴ፤ ባሌና ሽዋ የሽፍናሎ። ሰንዴ በከፍተኛና በማከላዌ፣ ደቡብ ምስራቅ አና በሰሜን ምእራብ የኢትዮጵያ ክፍል በዋናነት ይበቅላል"],
+            "context": [""]
+        },
+
+
+        {
+            "tag": "የግብርና_ሜኔስተር",
+            "patterns": ["የኢትዮጵያ ግብርና ቤሮ ?",
+                "ግብርና ሜኔሰተር መረጃ?",
+                "የግብርና መረጃ",
+                "የግብርና አማካሪውች ?",
+                "የግብርና ባለድርሻ አካላት ?",
+                " ግብርና ምክርና መረጃውች?",
+                "ግብርና አስተባባሬ ?"
+            ],
+
+            "responses": ["ሰለ ግብርና የሜፈልጎትን መርጃ በ 8028 ወይም የግብርና ሜኒስትር ደህር ገጥን ይጎብኞ። "],
+            "context": [""]
+        },
+
+        {
+            "tag": "የግብርና_ግብአት",
+            "patterns": ["ለሰብል እድገት የተሻለው ምንድን ነው ?",
+                "ዮርያ ዳብ ለሰብል እድገት የተሻለው ?",
+                "ለሰብል ተሎ እንዲያድግ ምን ነው መጠቀም ያለብኝ",
+                "የርያ ለሰብል ?",
+                "የዳብ አጠቃቅም ?",
+                "ለሰብል ዕድገት የተሻለው ምንድን ነው?",
+                "የዮርያና የዳብ አጠቃቅም ?"
+            ],
+
+            "responses": ["ሰብሎ ሲዘራ የዳብ መጠኖ ከዮርያው በግማሽ መብለጥ አለበት። ሰብሎ የበቀለና ትንሽ እድገት ያሳየ ከሆነ ለሰብሎ እድገት ዪዮርያ መጠኖ ከዳቡ በግማሽ መብለጥ አለበት"],
+            "context": [""]
+        },
+
+        {
+            "tag": "የቡት_ፕሮፋይል",
+            "patterns": ["ማነው ?",
+                "ሰለራስ ተናገር ?",
+                "ማን ልበል እርስህን አሰተዋውቅ",
+                "ይህ ምንድን ነው ?",
+                "ከማን ጋር ነው ማወራው?",
+                "ማን ትባላለህ ?"
+            ],
+
+            "responses": ["ይህ AgriBot የግብርናውን ክፍል ለማገዝ በሶፍትዌር ምህንድስና ተመራቂ ተማሬወች የለማ AI bot ነው። "],
+            "context": [""]
+        },
+
+        {
+            "tag": "maize",
+            "patterns": ["how maize grow",
+                "which enviroment is good for maize ?",
+                "which maize species in Ethiopia grow"
+            ],
+
+            "responses": ["Ethiopia is the second highest maize producer in Sub-Saharan Africa next to Nigeria Maize production of Ethiopia increased from 939 thousand tonnes in 1970 to 8500 thousand tonnes in 2019, growing at annual rate 7.64%   "],
+            "context": [""]
+        },
+
+
+
+        {
+            "tag": "call center",
+            "patterns": ["how can i get call center ?",
+                "i want to call?",
+                "i have quation ",
+                "i want to get agronomist?"
+            ],
+
+            "responses": ["call 8086 free call for more abouht agricalture in ethiopia "],
+            "context": [""]
+        },
+
+        {
+            "tag": "maise colera",
+            "patterns": ["maise disease what shall i do ?",
+                "on my maise i see fangus",
+                "on maise i see white collor",
+                "i see funges on maise i drop it out?",
+                "help me my plant already damge in fangus ?"
+            ],
+
+            "responses": ["use Herbicide Products "],
+            "context": [""]
+        },
+
+
+        {
+            "tag": "teff no product",
+            "patterns": ["teff disease what shall i do ?",
+                "on my teff i see fangus",
+                "my teff farm no longer grouth ",
+                "i want to get adivece all about teff farm?",
+                "what shall i do my teff farm for more product "
+            ],
+
+            "responses": ["use fertilizer 25 to 40 kg N/ha and 30 to 40kg "],
+            "context": [""]
+        },
+
+        {
+            "tag": "corn for high product",
+            "patterns": ["corn disease what shall i do ?",
+                " ?",
+                "on my corn i see fangus",
+                "on maiscorne i see white collor",
+                "i see funges on corn i drop it out?",
+                "my corn farm is not good what shall i do ?"
+            ],
+
+            "responses": ["natural fertilayizer use "],
+            "context": [""]
+        },
+
+        {
+            "tag": "any mation for farm",
+            "patterns": ["mation for rent or buy ?",
+                "i do my work fastily so what shall i do?",
+                "i want mation help me",
+                "were i get mation?",
+                "which mation is i use easy?",
+                "can i borow mation  ?"
+            ],
+
+            "responses": ["go  agricalture office please"],
+            "context": [""]
+        },
+
+        {
+            "tag": "contact to DA or exepert",
+            "patterns": ["exepert or DA acute problem?",
+                " pleace can i get DA?",
+                " i am on acute problem help",
+                "i want to talk with exepert what shall i do?",
+                "i am in big problem help"
+            ],
+
+            "responses": ["call in this number 8086 "],
+            "context": [""]
+        },
+
+        {
+            "tag": "fertilizer",
+            "patterns": ["which fertilizer good for me?",
+                "my soil is red which fertilizer is good?",
+                "my soil is black which fertilizer is good?",
+                "my soil is Loamy which fertilizer is good?",
+                "my soil is Sandy which fertilizer is good?",
+                "which soil is this?"
+            ],
+
+            "responses": ["use fertilizer recommendaion here"],
+            "context": [""]
+        },
+
+        {
+            "tag": "crop recomend",
+            "patterns": ["crop easy grow?",
+                "which plant get sort month",
+                "which plant is faster to grow and get profit easly?",
+                "which plant is costy in this time?",
+                "which crop is this good in this area?"
+            ],
+
+            "responses": ["contanct with agriculture exepert in office or DA"],
+            "context": [""]
+        },
+
+        {
+            "tag": "weather recomendation",
+            "patterns": ["weather of month?",
+                "which weather is good for maize",
+                "which weather is good for corn?",
+                "which weather is dangeres in this time?",
+                "which weather is good in this area?"
+            ],
+
+            "responses": ["pleace use weather forcasting"],
+            "context": [""]
+        },
+
+    
+    {"tag": "የአየር ነብረት ሁነታ",
+  "patterns": ["የ አየር ነበረት የ ወሩ?", 
+                  "የተኛው የ አየር ነባራዊ ነው ለ በኮሎ ምችሁ የሆነው",
+                  "የተኛው የ አየር ሁነታ ነው ለ በኮሎ የተመረተው?",
+                  "የትኛው የ አየር ሁንታ ነው አሁን ላይ ደገኛ??",
+                  "የትኛው የ አየር ሁንታ ነው ትሩ ላዚ አከባቢ?"],
+   
+  "responses": ["እባኮን የ አየር ቲንበያን ተመልከቱ"],
+  "context": [""]
+
+    
+},
+{"tag": "የሰበል ሁነታ መግለጽ",
+  "patterns": ["በቀላልኩ ሚመረቱ እሀሎች?", 
+                  "በ አችር ጊዘ ሚያድጉ እህሎችህ",
+                  "የቱ እህል ነው በ ፍትነት ሚያድገው እና ለ ተርፍ አመችሂው?",
+                  "አዋች መርት የቱ ነው በ አሁኑ ጊዜ",
+                  "የትኛው ምርት ነው ለዚ አካባቢ ተመራች?"],
+   
+  "responses": ["የ ግብርና ባለሞያን በ አካል ያግኙ ዋይም በ አካባቢዎ ያለ ግብርና ቢሮ በመሀድ ባቂ መክርን ይውሰዱ  "],
+  "context": [""]
+
+    
+},
+{"tag": "መዳበሪያ አተቃቀም አይነቶች",
+  "patterns": ["የቱ መዳበሪያ ነው ትሩ ለኔ?", 
+                  "የኔ አፈር ከይ ነው የቱ መዳበሪያ ነው ትሩ?",
+                  "የኔ አፈር ትኩር ነው የቱ አፈር ነው ለኔ ትሩ?",
+                  "የኔ አፈር ረግረግ ነው የቱ መዳበሪያ ለተከም?",
+                  "የኔ አፈር አስሀዋማ ነው የቱን መርት ለተከም?",
+                  "የቱ አፈር እና መዳበሪያ ከነ መርት ጋር ዪሀዳል"],
+   
+  "responses": ["እባኮን ተተካሚያችን በመጀመሪያ የ እርሶን አፈር በ ማሺኑ ይመርምሩት"],
+  "context": [""]
+
+    
+},
+{"tag": "የ ግብርና ባልሞያ ማኘት",
+  "patterns": ["የ ግብርና ባልሞያ  or DA በጣም አጣዳፊ ሁነታ ላይ ነኝ?", 
+                  " እባኮን የ ግበረና ባለሞያን አገናኙን?",
+                  "በጣም አሰችጋሪ ሁነታ ላይ ነኝ እርዱኝ",
+                  "የ ግብርና ባለሞያዉን ፈለጋለው ምን ላርግ?",
+                  "አሳሳቢ ሁነታ ላይ ነኝ ሰብሌ ሊወድም ነው"],
+   
+  "responses": ["ተጠቃሚያችን የርሶን ችግር ታሳቢ በማረግ በጣም ቀላል እና የርሶን ችግር የሚፈታ፣ተካሚ መክርም ሚሰጦ 8028 ላይ ይደወሉ "],
+  "context": [""]
+
+},
+{"tag": "ለግብርናው ሚሆኑ ማሽን",
+  "patterns": ["ማሽን ለመከራይት እና ለመግዛት ?", 
+                  "ስራየን ማዘመን ፈለጋለው ምን ላርግ?",
+                  "ማሽን ፈልጋለው ምን ላርግ?",
+                  "ከየት ነው ማሽን ማገኝው?",
+                  "የቱ ማሽን ነው በቀላሉ ምንጠቀመው?",
+                  "የቱ ማሽን ነው በቀላሉ መጠከም ምን ችለው?",
+                  "ማሽን መዋስ ችላለው?"],
+   
+  "responses": ["እባኮን ተጠቃሚያችን በ አካል ወደ ግብርና ቢሮ በመሄድ ምትፈልጉትን ማሽን በ ፈለጉት አይነት እና መጠ በመግዛትም ሆነ በመከራየት ይጠቀሙ እናም ከዘመኑ ጋር ዪዘምኑ"],
+  "context": [""]
+
+    
+},
+{"tag": "ብዙ ምርት ያለው በኮሎ",
+"patterns": ["ለ በኮሎ በሽታ ምን ላርግ ?", 
+                " ምን አይነት ማዳበሪያ ልጠከም?",
+                "የ በቆሎዬ ማሳ ላይ በችሂታ አየው ምን ላርግ",
+                "ፈንገስ አየው ቦኮሎ ማሳየ ላይ እንደት ላስወገድ?",
+                "የ በኮሎዬ ምርት እንደማየው አተጋቢ አይደለም ምን ላይ ?"],
+ 
+"responses": ["ውድ የ chatbot ተጠቃሚያችን በአካባቢዎ ያለና ተፈጥሮአዊ ማዳበሪያን ይጠከሙ እና በኪ ውሃ እንዲያገኝ አርጉት መርቶትን "],
+"context": [""]
+},
+{"tag": "የ ስልክ ማእከልን ያግኙ",
+     "patterns": ["የ ሰልክ ማህከለን እንደት ማግኘት ዪችሃላል ?", 
+                     "እንዴት በ ሰልክ ማወራት ይቻላል?",
+                     "ጥያከ አለኝ ሰለ ብዙ ነገር ",
+                     "በ ግብርናው ዙሪያ ባለሞያ ፈልጋለው?"],
+      
+     "responses": ["ወድ የዚ chatbot ተጠቃሚያቺን በ ቀጥታ በ8028 ደወሎ የልቦን ያድርሱ "],
+     "context": [""]
+    }
+
+]
+}
